@@ -14,6 +14,23 @@ Currently working on custom IC designs, including schematic, logic/analog simula
 - Physical verification (DRC/LVS)
 - Parasitic extraction and post-layout simulation
 
+<table>
+  <tr>
+    <td align="center">
+      <strong>Inverter Schematic</strong><br>
+      <img src="lab0/InvSchematic.png" alt="lab0schematic" style="width:80%; max-width:300px; height:auto;">
+    </td>
+    <td align="center">
+      <strong>Initial Layout (DRC/LVS Passed)</strong><br>
+      <img src="lab0/InvLayout1.png" alt="lab0layout1" style="width:100%; max-width:300px; height:auto;">
+    </td>
+    <td align="center">
+      <strong>Refined Layout</strong><br>
+      <img src="lab0/InvLayout2.png" alt="lab0layout2" style="width:100%; max-width:300px; height:auto;">
+    </td>
+  </tr>
+</table>
+
 ## Lab 1 - 4-Bit SRAM Memory Cell (In Progress)
 
 **Part A: 4-bit Memory Cell**
