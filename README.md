@@ -25,7 +25,7 @@ Currently working on custom IC designs, including schematic, logic/analog simula
       <img src="lab0/InvLayout1.png" alt="lab0layout1" style="width:100%; max-width:300px; height:auto;">
     </td>
     <td align="center">
-      <strong>Refined Layout</strong><br>
+      <strong>Cleaner Layout 2</strong><br>
       <img src="lab0/InvLayout2.png" alt="lab0layout2" style="width:100%; max-width:300px; height:auto;">
     </td>
   </tr>
