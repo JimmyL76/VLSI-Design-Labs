@@ -5,6 +5,7 @@ Currently working on custom IC designs, including schematic, logic/analog simula
 ## Tools
 
 **EDA Tools**: Cadence Virtuoso (schematic/layout), NC Verilog (logic sim), Spectre (analog sim), Calibre (DRC/LVS/Parasitic Extraction), HSPICE (post-layout sim)
+
 **Technology**: FreePDK45 (45nm CMOS)
 
 ## Lab 0 - Inverter (Completed)
