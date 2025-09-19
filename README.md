@@ -32,15 +32,16 @@ Currently working on custom IC designs, including schematic, logic/analog simula
   </tr>
 </table>
 
-## Lab 1 - 4-Bit SRAM Memory Cell (In Progress)
+## Lab 1 - 4-Bit SRAM Memory Cell (Completed)
+*Will post images when class is done submitting lab, or reach out on LinkedIn for more details!*
 
 **Part A: 4-bit Memory Cell**
 
-- Inverter characterization across input slews and output load capacitances
+- Inverter characterization across input slews and output load capacitances (HSPICE)
 - 4-bit latch-based memory array with area optimization
-- Physical verification
+- Logical/physical verification (Spectre/HSPICE)
 
 **Part B: 32x32 Memory Array**
 
-- Simulate and measure worst-case access time
+- Simulate and measure worst-case access time (Spectre)
 - Wire delay modeling/simulation using RC networks
