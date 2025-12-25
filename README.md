@@ -1,6 +1,6 @@
 # VLSI-Design-Labs
 
-Currently working on schematics/layouts for VLSI IC designs, including logic simulation, verification, custom layout/APR, and post-layout simulation.
+Design labs focused on physical design/VLSI, including schematics/layouts, logic simulation, verification, custom layout/APR, and post-layout simulation.
 
 ## Tools
 
