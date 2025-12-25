@@ -4,11 +4,11 @@ Currently working on schematics/layouts for VLSI IC designs, including logic sim
 
 ## Tools
 
-**EDA Tools**: Cadence Virtuoso (schematic/layout), NC Verilog (logic sim), Spectre (analog sim), Calibre (DRC/LVS/Parasitic Extraction), HSPICE (post-layout sim), PrimeTime (static timing analysis)
+**EDA Tools**: Cadence Virtuoso (schematic/layout), NC Verilog (logic sim), Spectre (analog sim), Calibre (DRC/LVS/Parasitic Extraction), HSPICE (post-layout sim), PrimeTime (static timing analysis), Design Vision (synthesis), Innovus (automatic place-and-route)
 
 **Technology**: FreePDK45 (45nm CMOS)
 
-## Lab 0 - Inverter (Completed)
+## Lab 0 - Inverter
 
 - Basic inverter design (schematic & layout)
 - Logic and analog simulation
@@ -34,7 +34,7 @@ Currently working on schematics/layouts for VLSI IC designs, including logic sim
 
 *For the following, reach out on LinkedIn for more details or images!*
 
-## Lab 1 - 4-Bit SRAM Memory Cell (Completed)
+## Lab 1 - 4-Bit SRAM Memory Cell
 
 <img src="lab1/memcell.png" alt="lab1memcell" style="width:60%; max-width:250px; height:auto;">
 
@@ -66,4 +66,25 @@ Currently working on schematics/layouts for VLSI IC designs, including logic sim
 - Optimized funnel shifter to minimize delay - reduce large fanout, place faster control signals on delay path before slower ones, ensure overflow bit from shifter utilizes the least amount of gates and logic levels possible
 - Also optimized for the final critical path delay through the adder to compare operation 
 
-## Lab 3 - Synchronous Serial Port (SSP) and Wishbone Bus Interface (In Progress)
+## Lab 3 - Synchronous Serial Port (SSP) and Wishbone Bus Interface
+
+**Part A: SSP Design**
+
+<img src="lab3/SSP.gif" alt="lab3ssp" style="width:60%; max-width:250px; height:auto;">
+
+- Implemented module for 8-bit parallel-to-serial/serial-to-parallel logic in SystemVerilog
+- Included 4-deep FIFO for Transmit (TX) and Receive (RX) to buffer data when crossing clock domains (CDC)
+- Verified functionality using VCS, validating frame control signals and ensuring correct data loopback behavior
+- Synthesized using Design Vision, optimizing constraints to balance area/timing and no negative slack
+
+**Part B: Integration of SSP with ARM Core using Wishbone**
+
+<img src="lab3/armnew.gif" alt="lab3block" style="width:49%; max-width:250px; height:auto;">
+<img src="lab3/new_top.gif" alt="lab3diagram" style="width:49%; max-width:250px; height:auto;">
+
+- Designed Wishbone Bus interface with Master/Slave modules to bridge 32-bit ARM processor with SSP and memory
+- Implemented memory-mapped I/O logic for instruction memory (0x0000000-0x000FFFF) and SSP data transfer (0x0010000 for write, 0x0010001 for read)
+- Created Clock Management Unit (CMU) to generate non-overlapping two-phase clocks (phi1/phi2) and stalling of ARM core during TX FIFO overflow
+- Verified system-level integration in VCS with ARM assembly test program
+- Synthesized with Design Vision and also took through APR (Innovus) for floorplanning, layout, and routing
+
