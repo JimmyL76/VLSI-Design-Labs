@@ -79,8 +79,10 @@ Currently working on schematics/layouts for VLSI IC designs, including logic sim
 
 **Part B: Integration of SSP with ARM Core using Wishbone**
 
-<img src="lab3/armnew.gif" alt="lab3block" style="width:49%; max-width:250px; height:auto;">
-<img src="lab3/new_top.gif" alt="lab3diagram" style="width:49%; max-width:250px; height:auto;">
+<p align="center">
+  <img src="lab3/armnew.gif" alt="lab3block" height="290" />
+  <img src="lab3/new_top.gif" alt="lab3diagram" height="290" />
+</p>
 
 - Designed Wishbone Bus interface with Master/Slave modules to bridge 32-bit ARM processor with SSP and memory
 - Implemented memory-mapped I/O logic for instruction memory (0x0000000-0x000FFFF) and SSP data transfer (0x0010000 for write, 0x0010001 for read)
