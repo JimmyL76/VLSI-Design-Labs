@@ -49,7 +49,7 @@ Currently working on schematics/layouts for VLSI IC designs, including logic sim
 - Simulate and measure worst-case access time (Spectre)
 - Wire delay modeling/simulation using RC networks
 
-## Lab 2 - 16-Bit Adder and ALU (Completed)
+## Lab 2 - 16-Bit Adder and ALU
 
 <img src="lab2/alu.png" alt="lab2alu" style="width:60%; max-width:250px; height:auto;">
 
@@ -79,10 +79,9 @@ Currently working on schematics/layouts for VLSI IC designs, including logic sim
 
 **Part B: Integration of SSP with ARM Core using Wishbone**
 
-<p align="center">
-  <img src="lab3/armnew.gif" alt="lab3block" height="290" />
-  <img src="lab3/new_top.gif" alt="lab3diagram" height="290" />
-</p>
+<img src="lab3/armnew.gif" alt="lab3block" style="width:60%; max-width:250px; height:auto;">
+<img src="lab3/new_top.gif" alt="lab3diagram" style="width:60%; max-width:250px; height:auto;">
+
 
 - Designed Wishbone Bus interface with Master/Slave modules to bridge 32-bit ARM processor with SSP and memory
 - Implemented memory-mapped I/O logic for instruction memory (0x0000000-0x000FFFF) and SSP data transfer (0x0010000 for write, 0x0010001 for read)
